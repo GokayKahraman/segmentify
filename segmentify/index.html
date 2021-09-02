@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Sizin için seçtiklerimiz</h2>
+            <div class="container-part">
+                <div class="menu" id="menu">
+                    <a class="link" onclick="sizeozel()"><div class="item-container"><div class="border"></div><div class="menu-item">Size Özel</div></div></a>
+                    <a class="link" onclick="tamir()"><div class="item-container"><div class="border"></div><div class="menu-item">Tamir, Tadilat Gereçleri</div></div></a>
+                    <a class="link" onclick="mobilya()"><div class="item-container"><div class="border"></div><div class="menu-item">Mobilya</div></div></a>
+                    <a class="link" onclick="saglik()"><div class="item-container"><div class="border"></div><div class="menu-item">Sağlık, Medikal</div></div></a>
+                    <a class="link" onclick="laptop()"><div class="item-container"><div class="border"></div><div class="menu-item">Dizüstü Bilgisayar</div></div></a>
+                    <a class="link" onclick="isitma()"><div class="item-container"><div class="border"></div><div class="menu-item">Isıtma, Soğutma Sistemi</div></div></a>
+                </div>
+                <div class="swiper">
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper" id="deneme">
+                        <div class="swiper-slide"><a hreF="#" onclick="sizeozel()"><p class="menu-text">Size Özel</p></a></div>
+                        <div class="swiper-slide"><a hreF="#" onclick="tamir()"><p class="menu-text">Tamir, Tadilat Gereçleri</p></a></div>
+                        <div class="swiper-slide"><a hreF="#" onclick="mobilya()"><p class="menu-text">Mobilya</p></a></div>
+                        <div class="swiper-slide"><a hreF="#" onclick="saglik()"><p class="menu-text"> Sağlık, Medikal</p></a></div>
+                        <div class="swiper-slide"><a hreF="#" onclick="laptop()"><p class="menu-text">Dizüstü Bilgisayar</p></a></div>
+                        <div class="swiper-slide"><a hreF="#" onclick="isitma()"><p class="menu-text">Isıtma, Soğutma Sistemi</p></a></div>
+                    </div>
+                    
+                    
+                </div>
+                
+                </div>
+
+
+                <div class="items">
+                      <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper">
+                          <!-- list here -->
+                        </div>
+                        <div class="swiper-button-prev"><span></span></div>
+                        <div class="swiper-button-next"><span></span></div>
+                        <div class="swiper-pagination"></div>
+                      </div>                     
+                </div>
+            </div>
+        </div>
+
+            <div class="popup" id="popup">
+                <div class="svg">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 367.805 367.805" style="enable-background:new 0 0 367.805 367.805;" xml:space="preserve"><g><path style="fill:#3BB54A;" d="M183.903,0.001c101.566,0,183.902,82.336,183.902,183.902s-82.336,183.902-183.902,183.902 S0.001,285.469,0.001,183.903l0,0C-0.288,82.625,81.579,0.29,182.856,0.001C183.205,0,183.554,0,183.903,0.001z"/><polygon style="fill:#D4E1F4;" points="285.78,133.225 155.168,263.837 82.025,191.217 111.805,161.96 155.168,204.801 256.001,103.968"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                </div>
+                <div class="popup-text">
+                    <span>Ürün sepete eklendi.</span>
+                    <div><a href="" >Sepete git</a></div>
+                </div>
+                <a onclick="closePopup()">
+                    <div class="svg">
+                        <svg class="icon icon-cross"><use xlink:href="#icon-cross"><symbol id="icon-cross" viewBox="0 0 32 32">
+                        <path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
+                        </symbol></use></svg>
+                    </div>
+                </a>
+
+            </div>  
+        
+
+        
+       
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.2/swiper-bundle.min.js"></script> 
+        <script src="product-list.js"></script>
+        <script src="main.js"></script>
+    
+    </body>  
+</html>
